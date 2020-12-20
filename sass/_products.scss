@@ -1,0 +1,96 @@
+.wrapper-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .column {
+    cursor: default;
+    margin: 50px 20px;
+    width: 30%;
+    padding: 50px 0 60px 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: 1s;
+    border-radius: 10%;
+    background-color: rgba(255, 217, 0, 0.1);
+
+    img {
+      margin: 0 auto;
+      width: 70%;
+      height: 200px;
+    }
+
+    .about-product {
+      text-align: center;
+      color: $second-color;
+
+      h1 {
+        font-size: 30px;
+        padding: 30px;
+      }
+
+      p {
+        margin: 0 auto;
+        padding: 10px;
+        font-size: 20px;
+      }
+
+      p:last-child {
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+        background-color: rgb(61, 11, 11);
+        margin: 20px auto 10px auto;
+        padding: 15px 0;
+        border-radius: 50%;
+        cursor: pointer;
+        width: 60%;
+      }
+
+      .fa-dollar-sign {
+        font-size: 28px;
+        padding: 5px;
+      }
+    }
+  }
+}
+
+.column:hover .product-images {
+  display: block;
+}
+
+.product-images {
+  display: none;
+  position: absolute;
+  top: 28.5%;
+  right: -25%;
+  transform: translate(-50%, -50%);
+}
+
+
+.filtrs {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  position: relative;
+  padding-bottom: 15px;
+  border-bottom: 1px solid $second-color;
+  font-family: $font-header;
+
+  p {
+    margin-left: 50px;
+    font-size: 23px;
+    color: $second-color;
+    cursor: pointer;
+  }
+}
+
+
+.suit {
+  .column {
+    img {
+      height: 300px;
+    }
+  }
+}

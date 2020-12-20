@@ -1,0 +1,58 @@
+.fas.active {
+  top: 50px;
+}
+
+.fa-bars.active {
+  animation: changeBars 1s both;
+}
+
+.fa-times.active {
+  animation: closeMenu 1.5s both;
+}
+
+nav.active {
+  animation: showMenu 1s both;
+}
+
+.nonActive {
+  display: none;
+}
+
+section.active {
+  display: block;
+}
+
+@keyframes changeBars {
+  0% {
+    opacity: 1;
+    font-size: 30px;
+  }
+
+  100% {
+    opacity: 0;
+    font-size: 0;
+  }
+}
+
+@keyframes closeMenu {
+  0% {
+    opacity: 0;
+    font-size: 0;
+  }
+
+  100% {
+    z-index: 3;
+    opacity: 1;
+    font-size: 30px;
+  }
+}
+
+@keyframes showMenu {
+  0% {
+    top: -50px;
+  }
+
+  100% {
+    top: 0;
+  }
+}

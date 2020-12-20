@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "mobileHeader.css",
+	"sources": [
+		"../../sass/Header/mobileHeader.scss"
+	],
+	"names": [],
+	"mappings": ""
+}

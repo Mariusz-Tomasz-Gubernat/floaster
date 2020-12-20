@@ -1,0 +1,187 @@
+/***  MEDIA ***/
+
+@media(max-width:1250px) {
+  header {
+
+    .fas {
+      font-size: 50px;
+    }
+
+    .header-description {
+
+      h1,
+      h3 {
+        line-height: 120px;
+      }
+
+      h1 {
+        font-size: 80px;
+      }
+
+      h3 {
+        font-size: 50px;
+        transform: translateX(80px);
+      }
+    }
+  }
+}
+
+@media(max-width:1024px) {
+
+  header {
+
+    .header-description {
+
+      h1,
+      h3 {
+        line-height: 80px;
+      }
+    }
+  }
+
+  nav {
+    ul {
+      li {
+        a {
+          font-size: 25px;
+          padding: 15px;
+        }
+      }
+    }
+  }
+
+  .wrapper-columns {
+
+    .column {
+      width: 30%;
+      margin: 50px 20px;
+      padding: 50px 10px 60px 10px;
+
+      .about-product {
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .column:hover {
+    transform: scale(1);
+  }
+}
+
+@media(max-width:910px) {
+  .wrapper-columns {
+    .column {
+      width: 40%;
+    }
+  }
+
+  .section-title {
+    display: flex;
+    justify-content: center;
+    margin: 100px auto;
+    padding: 0;
+    font-size: 100px;
+  }
+
+  .section-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 170px;
+  }
+
+  header {
+
+    .header-description {
+
+      h1 {
+        font-size: 70px;
+      }
+
+      h3 {
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+@media(max-width:740px) {
+
+  header {
+
+    .header-description {
+
+      h1,
+      h3 {
+        line-height: 50px;
+      }
+
+      h1 {
+        font-size: 50px;
+      }
+
+      h3 {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .section-title {
+    font-size: 50px;
+  }
+}
+
+@media(max-width:570px) {
+
+  .section-title {
+    margin: 70px auto;
+  }
+
+  header {
+    margin-bottom: 100px;
+
+    .fas {
+      top: 20px;
+      left: 30px;
+    }
+
+    .header-description {
+
+      h1,
+      h3 {
+        line-height: 50px;
+      }
+
+      h1 {
+        font-size: 50px;
+      }
+
+      h3 {
+        font-size: 25px;
+        transform: translateX(0);
+      }
+    }
+  }
+
+  .filtrs {
+    p {
+      margin-left: 20px;
+      font-size: 18px;
+    }
+  }
+
+  .wrapper-columns {
+    .column {
+      width: 80%;
+    }
+  }
+}
+
+@media(max-width:360px) {
+  .wrapper-columns {
+    .column {
+      padding: 50px 0 60px 0;
+    }
+  }
+}

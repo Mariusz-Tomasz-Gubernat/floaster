@@ -1,0 +1,36 @@
+
+/***  GLOBAL  ***/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $bgc-body;
+  font-family: $font-text;
+}
+
+::after,::before {
+  display: block;
+  position: absolute;
+  content: "";
+}
+
+.section-title {
+  width: 200px;
+  margin: 100px;
+  position: relative;
+  font-size: 80px;
+  color: $section-title-color;
+  letter-spacing: 1.5px;
+}
+
+.section-title::after {
+  bottom: -15px;
+  left: 40px;
+  width: 257px;
+  height: 3px;
+  background-color: $second-color;
+  border-radius: 50%;
+}

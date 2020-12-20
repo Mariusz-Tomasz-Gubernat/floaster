@@ -1,0 +1,52 @@
+header {
+  position: relative;
+  overflow: hidden;
+
+  .fas {
+    position: fixed;
+    top: 30px;
+    left: 50px;
+    color: $primary-color;
+    font-size: 30px;
+    cursor: pointer;
+
+  }
+
+  .fa-bars {
+    z-index: 2;
+  }
+
+  .fa-times {
+    opacity: 0;
+    z-index: 1;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 100vh;
+  }
+
+  .header-description {
+    position: absolute;
+    @include element-center;
+
+    h1,
+    h3 {
+      color: $primary-color;
+      letter-spacing: 1.5px;
+      line-height: 100px;
+    }
+
+    h1 {
+      font-size: 100px;
+    }
+
+    h3 {
+      font-size: 70px;
+      transform: translateX(80px);
+    }
+
+  }
+
+}

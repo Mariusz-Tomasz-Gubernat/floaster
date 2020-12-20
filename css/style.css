@@ -1,0 +1,399 @@
+.fas.active {
+  top: 50px;
+}
+
+.fa-bars.active {
+  animation: changeBars 1s both;
+}
+
+.fa-times.active {
+  animation: closeMenu 1.5s both;
+}
+
+nav.active {
+  animation: showMenu 1s both;
+}
+
+.nonActive {
+  display: none;
+}
+
+section.active {
+  display: block;
+}
+
+@keyframes changeBars {
+  0% {
+    opacity: 1;
+    font-size: 30px;
+  }
+  100% {
+    opacity: 0;
+    font-size: 0;
+  }
+}
+
+@keyframes closeMenu {
+  0% {
+    opacity: 0;
+    font-size: 0;
+  }
+  100% {
+    z-index: 3;
+    opacity: 1;
+    font-size: 30px;
+  }
+}
+
+@keyframes showMenu {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.wrapper-columns {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.wrapper-columns .column {
+  cursor: default;
+  margin: 50px 20px;
+  width: 30%;
+  padding: 50px 0 60px 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  position: relative;
+  transition: 1s;
+  border-radius: 10%;
+  background-color: rgba(255, 217, 0, 0.1);
+}
+
+.wrapper-columns .column img {
+  margin: 0 auto;
+  width: 70%;
+  height: 200px;
+}
+
+.wrapper-columns .column .about-product {
+  text-align: center;
+  color: gold;
+}
+
+.wrapper-columns .column .about-product h1 {
+  font-size: 30px;
+  padding: 30px;
+}
+
+.wrapper-columns .column .about-product p {
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.wrapper-columns .column .about-product p:last-child {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  font-size: 25px;
+  background-color: #3d0b0b;
+  margin: 20px auto 10px auto;
+  padding: 15px 0;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 60%;
+}
+
+.wrapper-columns .column .about-product .fa-dollar-sign {
+  font-size: 28px;
+  padding: 5px;
+}
+
+.column:hover .product-images {
+  display: block;
+}
+
+.product-images {
+  display: none;
+  position: absolute;
+  top: 28.5%;
+  right: -25%;
+  transform: translate(-50%, -50%);
+}
+
+.filtrs {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-top: 100px;
+  position: relative;
+  padding-bottom: 15px;
+  border-bottom: 1px solid gold;
+  font-family: "Castoro", serif;
+}
+
+.filtrs p {
+  margin-left: 50px;
+  font-size: 23px;
+  color: gold;
+  cursor: pointer;
+}
+
+.suit .column img {
+  height: 300px;
+}
+
+header {
+  position: relative;
+  overflow: hidden;
+}
+
+header .fas {
+  position: fixed;
+  top: 30px;
+  left: 50px;
+  color: #f0ba32;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+header .fa-bars {
+  z-index: 2;
+}
+
+header .fa-times {
+  opacity: 0;
+  z-index: 1;
+}
+
+header img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100vh;
+}
+
+header .header-description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header .header-description h1,
+header .header-description h3 {
+  color: #f0ba32;
+  letter-spacing: 1.5px;
+  line-height: 100px;
+}
+
+header .header-description h1 {
+  font-size: 100px;
+}
+
+header .header-description h3 {
+  font-size: 70px;
+  transform: translateX(80px);
+}
+
+nav {
+  width: 100vw;
+  position: fixed;
+  top: -50px;
+  background-color: #293148;
+  z-index: 1;
+}
+
+nav ul {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 10px;
+  width: 50%;
+  text-align: center;
+  list-style: none;
+}
+
+nav ul li :hover {
+  background-color: #153163;
+  transform: scale(1.1);
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: #f0ba32;
+  font-size: 20px;
+}
+
+/***  GLOBAL  ***/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: "JetBrains Mono", monospace;
+}
+
+::after, ::before {
+  display: block;
+  position: absolute;
+  content: "";
+}
+
+.section-title {
+  width: 200px;
+  margin: 100px;
+  position: relative;
+  font-size: 80px;
+  color: rgba(119, 136, 153, 0.7);
+  letter-spacing: 1.5px;
+}
+
+.section-title::after {
+  bottom: -15px;
+  left: 40px;
+  width: 257px;
+  height: 3px;
+  background-color: gold;
+  border-radius: 50%;
+}
+
+/***  MEDIA ***/
+@media (max-width: 1250px) {
+  header .fas {
+    font-size: 50px;
+  }
+  header .header-description h1,
+  header .header-description h3 {
+    line-height: 120px;
+  }
+  header .header-description h1 {
+    font-size: 80px;
+  }
+  header .header-description h3 {
+    font-size: 50px;
+    transform: translateX(80px);
+  }
+}
+
+@media (max-width: 1024px) {
+  header .header-description h1,
+  header .header-description h3 {
+    line-height: 80px;
+  }
+  nav ul li a {
+    font-size: 25px;
+    padding: 15px;
+  }
+  .wrapper-columns .column {
+    width: 30%;
+    margin: 50px 20px;
+    padding: 50px 10px 60px 10px;
+  }
+  .wrapper-columns .column .about-product p {
+    font-size: 18px;
+  }
+  .column:hover {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 910px) {
+  .wrapper-columns .column {
+    width: 40%;
+  }
+  .section-title {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin: 100px auto;
+    padding: 0;
+    font-size: 100px;
+  }
+  .section-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 170px;
+  }
+  header .header-description h1 {
+    font-size: 70px;
+  }
+  header .header-description h3 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 740px) {
+  header .header-description h1,
+  header .header-description h3 {
+    line-height: 50px;
+  }
+  header .header-description h1 {
+    font-size: 50px;
+  }
+  header .header-description h3 {
+    font-size: 30px;
+  }
+  .section-title {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 570px) {
+  .section-title {
+    margin: 70px auto;
+  }
+  header {
+    margin-bottom: 100px;
+  }
+  header .fas {
+    top: 20px;
+    left: 30px;
+  }
+  header .header-description h1,
+  header .header-description h3 {
+    line-height: 50px;
+  }
+  header .header-description h1 {
+    font-size: 50px;
+  }
+  header .header-description h3 {
+    font-size: 25px;
+    transform: translateX(0);
+  }
+  .filtrs p {
+    margin-left: 20px;
+    font-size: 18px;
+  }
+  .wrapper-columns .column {
+    width: 80%;
+  }
+}
+
+@media (max-width: 360px) {
+  .wrapper-columns .column {
+    padding: 50px 0 60px 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
